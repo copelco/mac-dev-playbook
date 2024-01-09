@@ -75,11 +75,13 @@ homebrew_cask_apps:
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
+  - { id: 506189836,  name: "Harvest" }
   - { id: 1289583905, name: "Pixelmator Pro" }
   - { id: 822514576,  name: "SonicWall Mobile Connect" }
   - { id: 1475387142, name: "Tailscale" }
-  - { id: 1451685025, name: "WireGuard" }
   - { id: 310633997,  name: "WhatsApp Messenger" }
+  - { id: 1451685025, name: "WireGuard" }
+
 mas_email: ""
 mas_password: ""
 
