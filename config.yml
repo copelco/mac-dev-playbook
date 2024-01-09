@@ -1,0 +1,112 @@
+---
+downloads: ~/.ansible-downloads/
+
+configure_dotfiles: true
+configure_terminal: false
+configure_osx: false
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: false
+dockitems_remove: []
+# - Launchpad
+# - TV
+# - Podcasts
+# - 'App Store'
+dockitems_persist: []
+# - name: "Sublime Text"
+#   path: "/Applications/Sublime Text.app/"
+#   pos: 5
+
+configure_sudoers: false
+sudoers_custom_config: ''
+# Example:
+# sudoers_custom_config: |
+#   # Allow users in admin group to use sudo with no password.
+#   %admin ALL=(ALL) NOPASSWD: ALL
+
+dotfiles_repo: git@github.com:copelco/dotfiles.git
+dotfiles_repo_version: main
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/projects/dotfiles-copelco
+dotfiles_files:
+  - .config/starship.toml
+  - .direnvrc
+  - .gitconfig
+  - .gitignore
+  - .vimrc
+  - .zshrc
+  - .zsh_plugins.txt
+
+homebrew_installed_packages:
+  - direnv
+  - git
+  - gnu-sed
+  - libffi
+  - libssh
+  - lz4
+  - mas
+  - nmap
+  - openssl
+  - pkg-config
+  - pwgen
+  - starship
+  - wget
+  - xxhash
+  - zlib
+  - zsh
+  - zsh-autosuggestions
+  - zsh-history-substring-search
+  - zsh-syntax-highlighting
+  - zstd
+
+homebrew_taps: []
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - 1password-cli
+  - docker
+  - dropbox
+  - firefox
+  - google-chrome
+  - google-drive
+  - postgres-unofficial
+  - slack
+  - visual-studio-code
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps:
+  - { id: 1289583905, name: "Pixelmator Pro" }
+  - { id: 822514576,  name: "SonicWall Mobile Connect" }
+  - { id: 1475387142, name: "Tailscale" }
+  - { id: 1451685025, name: "WireGuard" }
+  - { id: 310633997,  name: "WhatsApp Messenger" }
+mas_email: ""
+mas_password: ""
+
+osx_script: "~/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: []
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: []
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: []
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages: []
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Set to 'true' to configure Sublime Text.
+configure_sublime: false
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: []
