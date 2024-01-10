@@ -64,6 +64,7 @@ homebrew_taps: []
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password-cli
+  - discord
   - docker
   - dropbox
   - firefox
@@ -71,6 +72,7 @@ homebrew_cask_apps:
   - google-drive
   - postgres-unofficial
   - slack
+  - tunnelblick
   - visual-studio-code
 
 # See `geerlingguy.mas` role documentation for usage instructions.
