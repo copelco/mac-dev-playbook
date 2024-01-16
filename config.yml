@@ -39,6 +39,7 @@ dotfiles_files:
 
 homebrew_installed_packages:
   - direnv
+  - doctl
   - git
   - gnu-sed
   - libffi
