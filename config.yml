@@ -53,6 +53,7 @@ homebrew_installed_packages:
   - starship
   - wget
   - xxhash
+  - zbar
   - zlib
   - zsh
   - zsh-autosuggestions
